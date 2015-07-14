@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="vendor/mdl/material.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/app.css">
+	<title>WebMIDI experiment</title>
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--overlay-drawer-button">
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">About</span>
+			<div class="short">
+				This is a showcase of the possibility of using MIDI control surfaces. 
+				You can control visuals with faders and knobs or a velocity sensitive keyboard. <br>
+				<!-- Below there's a link to a video if you don't have such device. -->
+			</div>
+			<nav class="mdl-navigation">
+				<!-- <a class="mdl-navigation__link" href="">Demo video</a> -->
+				<a class="mdl-navigation__link" href="https://github.com/kowdermeister/webmidi-vj">Github repository</a>
+				<a class="mdl-navigation__link" href="http://twitter.com/tiborsaas">Follow me on Twitter</a>
+			</nav>
+			<span class="mdl-layout-title">Technologies</span>
+				<ul>
+					<li><a href="http://getmdl.io">Material Design Lite</a></li>
+					<li><a href="https://muut.com/riotjs/guide/">Riot.js</a></li>
+					<li><a href="http://threejs.org/">Three.js</a></li>
+				</ul>
+		</div>
+		<main class="mdl-layout__content">
+			<div class="page-content">
+				<div class="demo-grid-1 mdl-grid">
+					<div class="mdl-cell mdl-cell--12-col"><h3>WebMIDI VJ Experiment</h3></div>
+				</div>
+				<div class="demo-grid-1 mdl-grid">
+					<controller-selector>
+				</div>
+				<div class="demo-grid-1 mdl-grid">
+					<div class="mdl-cell mdl-cell--4-col">
+						<slider id="xMod">
+					</div>
+					<div class="mdl-cell mdl-cell--4-col">
+						<slider id="yMod">
+					</div>
+					<div class="mdl-cell mdl-cell--4-col">
+						<slider id="zMod">
+					</div>
+				</div>
+				<div class="demo-grid-1 mdl-grid">
+					<div class="mdl-cell mdl-cell--12-col app"><!-- ThreeJS demo loads here --></div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<script src="vendor/mdl/material.min.js"></script>
+	<script src="vendor/riot/riot+compiler.min.js"></script>
+
+	<script src="vendor/threejs/build/three.min.js"></script>
+	<script src="vendor/threejs/examples/js/renderers/Projector.js"></script>
+	<script src="vendor/threejs/examples/js/renderers/CanvasRenderer.js"></script>
+	<script src="vendor/threejs/examples/js/shaders/CopyShader.js"></script>
+	<script src="vendor/threejs/examples/js/shaders/DigitalGlitch.js"></script>
+	<script src="vendor/threejs/examples/js/postprocessing/EffectComposer.js"></script>
+	<script src="vendor/threejs/examples/js/postprocessing/RenderPass.js"></script>
+	<script src="vendor/threejs/examples/js/postprocessing/MaskPass.js"></script>
+	<script src="vendor/threejs/examples/js/postprocessing/ShaderPass.js"></script>
+	<script src="vendor/threejs/examples/js/postprocessing/GlitchPass.js"></script>
+
+	<script src="components/slider.tag" type="riot/tag"></script>
+	<script src="components/controller-selector.tag" type="riot/tag"></script>
+
+	<script src="app/3d.js"></script>
+	<script src="app/midi.js"></script>
+	<script src="app/main.js"></script>
+</body>
+</html>

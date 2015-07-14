@@ -1,0 +1,36 @@
+
+body, html{
+	width: 100%;
+	height: 100%;
+}
+.app{
+	background: #eee;
+}
+.page-content h3{
+	margin-bottom: -3px;
+}
+.mdl-layout__drawer{
+	padding-top: 25px;
+}
+.short{
+	padding: 16px 40px;
+	font-size: 12px;
+}
+#controller-selector{
+	float: left;
+}
+.icon.large{
+	font-size: 36px;
+	margin-bottom: -12px;
+	position: relative;
+}
+.waiting .label{
+	position: relative;
+	top: -8px;
+	left: 5px;
+	display: inline-block;
+}
+.slider-save{
+	top: -10px;
+	left: 10px;
+}
