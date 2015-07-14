@@ -13,7 +13,7 @@
 		var selected = false;
 
 		activate (e) {
-			this.selected = e.target.value;
+			this.selected = true;
 			opts.trigger('selected', e.target.value);
 		}
 
