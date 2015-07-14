@@ -6,7 +6,7 @@ var midiObject = function(){
 	this.events = riot.observable();
 
 	this.initialize = function(){
-		navigator.requestMIDIAccess({ sysex: true }).then( 
+		navigator.requestMIDIAccess().then( 
 			this.onMIDISuccess.bind(this), 
 			this.onMIDIFailure
 		);
