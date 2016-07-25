@@ -5,7 +5,7 @@ If you have a MIDI controller surface, you can control 3D visuals with faders an
 You can also use [virtual MIDI cables](http://www.tobias-erichsen.de/software/loopmidi.html) to feed MIDI data from other software into the experiment. 
 
 ## Demo
-Peek here: http://kowdermeister.github.io/webmidi-vj/
+Peek here: http://tiborsaas.github.io/webmidi-vj/
 
 ## Vision
 The possibilites with WebMIDI are endless. Imagine that you are playing music live from your DAW and by simply placing markers and MIDI events in your sequencer you can control the visualization projected.
@@ -13,7 +13,7 @@ The possibilites with WebMIDI are endless. Imagine that you are playing music li
 Using a MIDI controller, like the [M-Audio Trigger Figer](https://www.youtube.com/watch?v=-Zw2zV0WMcc) you can control your 3D projects in a better way. You might want to assign the knobs to different parameters in your shader code.
 
 ## Source
-Head over to the `gh-pages` branch to [check out the source](https://github.com/kowdermeister/webmidi-vj/tree/gh-pages)
+Head over to the `gh-pages` branch to [check out the source](https://github.com/tiborsaas/webmidi-vj/tree/gh-pages)
 
 ## Tools used
 
